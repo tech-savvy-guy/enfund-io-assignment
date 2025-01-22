@@ -66,17 +66,42 @@ Follow these steps to set up and run the application on your local machine:
    ```bash
    cd client/
    ```
-2. **Install dependencies**:
+
+2. **Set the NODE_OPTIONS environment variable**:
+
+   - **For Windows (Command Prompt)**: Use this to set the NODE_OPTIONS environment variable temporarily for the current session:
+   
+     ```bash
+     set NODE_OPTIONS=--openssl-legacy-provider
+     npm start
+     ```
+
+   - **For Windows (PowerShell)**: In PowerShell, set the environment variable like this:
+   
+     ```bash
+     $env:NODE_OPTIONS="--openssl-legacy-provider"
+     npm start
+     ```
+
+   - **For macOS/Linux (Terminal)**: Set the environment variable like this:
+   
+     ```bash
+     export NODE_OPTIONS=--openssl-legacy-provider
+     npm start
+     ```
+
+3. **Install dependencies**:
    
    ```bash
    npm install
    ```
-3. **Start the frontend server**:
+
+4. **Start the frontend server**:
    
    ```bash
    npm start
    ```
-
+   
 ---
 
 ## How to Use
